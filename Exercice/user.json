@@ -1,0 +1,37 @@
+[
+    {
+        "id" : 1,
+        "lastname": "Poirot",
+        "firstname" : "Hercule",
+        "email" : "hercule.poirot@mail.com",
+        "password" : "abc123"
+    },
+    {
+        "id" : 15,
+        "lastname": "Holmes",
+        "firstname" : "Sherlock",
+        "email" : "sherlock.holmes@mail.com",
+        "password" : "abc123"
+    },
+    {
+        "id" : 18,
+        "lastname": "Drew",
+        "firstname" : "Nancy",
+        "email" : "nancy.drew@mail.com",
+        "password" : "abc123"
+    },
+    {
+        "id" : 11,
+        "lastname": "Conan",
+        "firstname" : "Shinichi",
+        "email" : "shinichi.conan@mail.com",
+        "password" : "abc123"
+    },
+    {
+        "id" : 21,
+        "lastname": "Columbo",
+        "firstname" : "Frank",
+        "email" : "frank.columbo@mail.com",
+        "password" : "abc123"
+    }
+]

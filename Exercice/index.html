@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("input").on("keyup", function() {
+                let email = $("#email").val().trim();
+                let password = $("#password").val().trim();
+
+                if (email === "" || password === "") {
+                    $(".button").css("background-color", "grey");
+                    $(".button").removeClass("active");
+                }
+                else {
+                    $(".button").css("background-color", "white");
+                    $(".button").addClass("active");
+                }
+            })
+            $(".button").on("click", function() {
+                let email = $("#email").val().trim();
+                let password = $("#password").val().trim();
+                $.get("./user.json", function(users) {
+                    for (i = 0 ; i < users.length ; i++) {
+                        let user = users[i]
+                        if (user.email === email && user.password === password){
+                            $("#horizontal-band").html(`Connected to ${user.firstname} ${user.lastname}`);
+                            $(".error").html(``);
+                            return false;
+                        }
+                        else {
+                            $("#horizontal-band").html(``);
+                            $(".error").html(`error`);
+                        }
+                    }
+                })
+            })
+        })
+    </script>
+    <title>detectbook</title>
+</head>
+
+<body>
+    <div id="horizontal-band"></div>
+    <form>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password">
+        </div>
+        <div class="button">Sign In</div>
+        <div class="error"></div>
+    </form>
+</body>
+
+</html>
