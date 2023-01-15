@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <script>
         $(document).ready(function() {
+            // login button color
             $("input").on("keyup", function() {
                 let email = $("#email").val().trim();
                 let password = $("#password").val().trim();
@@ -22,6 +23,8 @@
                     $(".button").addClass("active");
                 }
             })
+
+            // Conection
             $(".button").on("click", function() {
                 let email = $("#email").val().trim();
                 let password = $("#password").val().trim();
@@ -29,7 +32,15 @@
                     for (i = 0 ; i < users.length ; i++) {
                         let user = users[i]
                         if (user.email === email && user.password === password){
-                            $("#horizontal-band").html(`Connected to ${user.firstname} ${user.lastname}`);
+                            // header
+                            $("#horizontal-band").append(`
+                                <div>Connected to <span class="user">${user.firstname} ${user.lastname}</span></div>
+                                <div>
+                                    <button>My Pictures</button>
+                                    <button>My Galereis</button>
+                                    <button>Lof Out</button>
+                                </div
+                            `);
                             $(".error").html(``);
                             return false;
                         }
@@ -38,6 +49,13 @@
                             $(".error").html(`error`);
                         }
                     }
+                })
+            })
+
+            $(".user").on("click", function() {
+                console.log("click")
+                $.get("./profil.tpl", function(data) {
+                    $(".error").append(data)
                 })
             })
         })

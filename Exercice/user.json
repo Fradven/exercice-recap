@@ -4,34 +4,39 @@
         "lastname": "Poirot",
         "firstname" : "Hercule",
         "email" : "hercule.poirot@mail.com",
-        "password" : "abc123"
+        "password" : "a",
+        "picture" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theguardian.com%2Fchildrens-books-site%2F2016%2Ffeb%2F16%2Fhercule-poirot-an-odd-sort-of-hero&psig=AOvVaw108iy5KSum2B2bvroypdgQ&ust=1673867989215000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOCH1au6yfwCFQAAAAAdAAAAABAJ"
     },
     {
         "id" : 15,
         "lastname": "Holmes",
         "firstname" : "Sherlock",
         "email" : "sherlock.holmes@mail.com",
-        "password" : "abc123"
+        "password" : "a",
+        "picture" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fnl.wikipedia.org%2Fwiki%2FSherlock_Holmes&psig=AOvVaw06tum2-Ni3u7HGjQxF3mlS&ust=1673868054033000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPjxz8q6yfwCFQAAAAAdAAAAABAE"
     },
     {
         "id" : 18,
         "lastname": "Drew",
         "firstname" : "Nancy",
         "email" : "nancy.drew@mail.com",
-        "password" : "abc123"
+        "password" : "a",
+        "picture" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mountprospect.org%2FHome%2FComponents%2FCalendar%2FEvent%2F20356%2F1044%3Fbacklist%3D%252F&psig=AOvVaw0913doPM_hnR3y3KPZMm2q&ust=1673868076738000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNCKudW6yfwCFQAAAAAdAAAAABAT"
     },
     {
         "id" : 11,
         "lastname": "Conan",
         "firstname" : "Shinichi",
         "email" : "shinichi.conan@mail.com",
-        "password" : "abc123"
+        "password" : "a",
+        "picture" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Fshots%2F3363435-Detective-Conan&psig=AOvVaw0jzGeNzptjtFpeCxoDJ8ur&ust=1673868126545000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKi9nO26yfwCFQAAAAAdAAAAABAE"
     },
     {
         "id" : 21,
         "lastname": "Columbo",
         "firstname" : "Frank",
         "email" : "frank.columbo@mail.com",
-        "password" : "abc123"
+        "password" : "a",
+        "picture" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theguardian.com%2Ftv-and-radio%2F2022%2Faug%2F10%2Fa-sweet-simple-salt-of-the-earth-scruffball-why-i-love-columbo&psig=AOvVaw0ZvhhXg0tN7TBRwE0vVINp&ust=1673868156494000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJCCsvu6yfwCFQAAAAAdAAAAABAE"
     }
 ]

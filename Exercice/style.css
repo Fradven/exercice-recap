@@ -9,3 +9,9 @@
     border-radius: 1rem;
     width: 120px;
 }
+
+.user {
+    cursor: pointer;
+    background-color: rgb(122, 122, 157);
+    color: beige;
+}
